@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>827</width>
+    <height>340</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Currency Convert</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="Amtbox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>400</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>Amt. Here</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>194</x>
+      <y>0</y>
+      <width>440</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Currency Converter</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ConvertButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>808</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>Convert</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="Outbox">
+    <property name="geometry">
+     <rect>
+      <x>418</x>
+      <y>150</y>
+      <width>400</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>29</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="From">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>80</y>
+      <width>400</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>CrossCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+    <item>
+     <property name="text">
+      <string>INR (Indian Rupee)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AED (United Arab Emirates Dirham)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ARS (Argentine Peso)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AUD (Australian Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EUR (Euro)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BGN (Bulgarian Lev)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BMD (Bermudian Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BRL (Brazilian Real)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CAD (Canadian Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CHF (Swiss Franc)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CLP (Chilean Peso)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CNY (Chinese Renminbi)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COP (Colombian Peso)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CZK (Czech Koruna)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DKK (Danish Krona)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EGP (Egyptian Pound)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GBP (British Pound)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HKD (Hong Kong Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HRK (Croatian kuna)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HUF (Hungarian Forint)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>IDR (Indonesian Rupiah)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ILS (Israeli Shekel)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JMD (Jamaican Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JPY (Japanese Yen)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>KZT (Tenge)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>KRW (South Korean won)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MXN (Mexican Peso)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MYR (Malaysian Ringgit)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NGN (Nigerian Naira)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NOK (Norwegian Krona)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NZD (New-Zealand Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PEN (Peruvian New Sol)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PHP (Philippines Peso)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PLN (Polish Zloty)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>QAR (Qatari Riyal)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RON (Romanian Leu)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RUB (Russian Ruble)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SAR (Saudi Riyal)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SGD (Singapore Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SEK (Swedish Krona)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>THB (Thai Baht)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TTD (Trinidad and Tobago Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TRY (Turkish Lira)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TWD (Taiwan Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>UAH (Ukrainian Hryvnia)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>USD (US Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>VND (Vietnamese Dong)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZAR (South African Rand)</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="To">
+    <property name="geometry">
+     <rect>
+      <x>418</x>
+      <y>80</y>
+      <width>400</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>CrossCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+    <item>
+     <property name="text">
+      <string>USD (US Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AED (United Arab Emirates Dirham)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ARS (Argentine Peso)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AUD (Australian Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EUR (Euro)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BGN (Bulgarian Lev)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BMD (Bermudian Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BRL (Brazilian Real)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CAD (Canadian Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CHF (Swiss Franc)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CLP (Chilean Peso)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CNY (Chinese Renminbi)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COP (Colombian Peso)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CZK (Czech Koruna)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DKK (Danish Krona)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EGP (Egyptian Pound)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GBP (British Pound)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HKD (Hong Kong Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HRK (Croatian kuna)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HUF (Hungarian Forint)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>IDR (Indonesian Rupiah)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>INR (Indian Rupee)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ILS (Israeli Shekel)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JMD (Jamaican Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JPY (Japanese Yen)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>KZT (Tenge)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>KRW (South Korean won)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MXN (Mexican Peso)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MYR (Malaysian Ringgit)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NGN (Nigerian Naira)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NOK (Norwegian Krona)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NZD (New-Zealand Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PEN (Peruvian New Sol)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PHP (Philippines Peso)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PLN (Polish Zloty)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>QAR (Qatari Riyal)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RON (Romanian Leu)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RUB (Russian Ruble)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SAR (Saudi Riyal)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SGD (Singapore Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SEK (Swedish Krona)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>THB (Thai Baht)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TTD (Trinidad and Tobago Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TRY (Turkish Lira)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TWD (Taiwan Dollar)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>UAH (Ukrainian Hryvnia)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>VND (Vietnamese Dong)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZAR (South African Rand)</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>827</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionRefresh"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuOptions"/>
+  </widget>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionRefresh">
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
